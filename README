@@ -1,0 +1,106 @@
+# notitec
+Repositorio que contiene varios subproyectos desarrollados en la IDE
+Netbeans para el proyecto NotiTec del instituto tecnológico de veracruz.
+El proyecto consiste en una aplicación multiplataforma (web y movil) que
+sirva como notificador de noticias publicadas referentes al ITVer
+publicadas por la misma institución.
+
+El repositorio contiene la siguiente lista de subproyectos de los cuales
+se da una breve descripción:
+
+Nombre			|Descripción
+---------------------------------------------------------------------------------
+org.itver.notitec-entidad-bd	| Proyecto Java que contiene clases que modelan las
+				| entidades que se manejan en [R1].
+				| Éstas clases serán utilizadas posteriormente en
+				| otros proyectos y funcionarán solo para el modelo
+				| [R1], en caso de manejarse un modelo distinto habrá
+				| que hacer las adecuaciones necesarias.
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+org.itver.notitec-dao		| Proyecto Java que contiene clases para realizar
+				| operaciones CRUD (Create, Read, Update, Delete)
+				| en un servidor de bases de datos.
+				| Actualmente en el proyecto solo están implementadas
+				| las clases para realizar éstas operaciones en un
+				| servidor MySQL pero se puede extender agregando
+				| las clases necesarias para funcionar en distintos
+				| servidores de BD.
+				| El modelo de la BD en que está basado en funcionamiento
+				| de estas clases es [R1].
+				| Este proyecto depende de la librería [R3] y del 
+				| proyecto "org.itver.notitec-entidad-bd" para funcionar.
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+org.itver.notitec-portal	| Proyecto JEE que consiste en un sitio web desarrollado
+				| con JSP. El sitio web sirve de portal para realizar
+				| las operaciones CRUD del proyecto "org.itver.notitec-dao"
+				| Este proyecto depende del proyecto "org.itver.notitec-dao" y
+				| de [R4] y [R5] para funcionar.
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+NotiTecPHP			| Proyecto web que consiste en un sitio web en el
+				| cual se pueden hacer operaciones CRUD (Create,
+				| Read, Update, Delete) utilizando el modelo de
+				| la base de datos [R1]. El proyecto utiliza
+				| tecnológia PHP para funcionar por lo tanto es
+				| necesario tener un servidor Apache instalado,
+				| así también un servidor de bases de datos MySQL
+				| ambos pueden ser instalados usando [R2].
+---------------------------------------------------------------------------------
+org.itver.notitec-portal-websocket	| Proyecto JEE que realiza las mismas funciones que .
+					| "org.itver.notitec-portal" agregando tecnologia 
+					| Websocket para para realizar notificaciones, cada
+					| vez que una noticia es publicada en el portal 
+					| (noticia insertada en la base de datos).
+					| La notificación será recibida por cualquier otro
+					| proyecto que implemente la tecnología de websockets
+					| y que esté conectado al ENDPOINT del websocket de ésta
+					| aplicación.
+					| Este proyecto depende del proyecto "org.itver.notitec-dao" y
+					| de [R4] y [R5] para funcionar.
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+org.itver.notitec-portal-websocket	| Proyecto JEE que realiza las mismas funciones que .
+					| "org.itver.notitec-portal" agregando tecnologia 
+					| Websocket para para realizar notificaciones, cada
+					| vez que una noticia es publicada en el portal 
+					| (noticia insertada en la base de datos).
+					| La notificación será recibida por cualquier otro
+					| proyecto que implemente la tecnología de websockets
+					| y que esté conectado al ENDPOINT del websocket de ésta
+					| aplicación.
+					| Este proyecto depende del proyecto "org.itver.notitec-dao" y
+					| de [R4] y [R5] para funcionar.
+---------------------------------------------------------------------------------
+Chat2 / Chat3 / WebsocketHomeGlass /	| Proyectos para probar los websockets.
+WhiteBoardApp				| "Chat2" fue tomado de los ejemplos que contiene el servidor Tomcat.
+                                        | "Chat3" es una modificación de "Chat2", en este proyecto se hacen inserciones en una BD de los mensajes
+                                        | recibidos por el Endpoint del websocket.
+                                        | "WebsocketHomeGlass" es un proyecto tomado de [E1] el material del ejemplo se encuentra en [R6].
+                                        | "WhiteBoardApp" es un proyecto tomado de [E2] el material del ejemplo se encuentra en [R7].
+
+
+
+
+
+
+
+
+
+
+
+Recursos
+
+[R1] Modelo R de la base de datos utilizada para los proyectos en extensió .mwb (MySQL Workbench).
+[R2] XAMPP stack de software utilizado para desarrollar proyectos web https://www.apachefriends.org/es/download.html
+[R3] Conector JDBC para MySQL. 
+[R4] Java Esterprise Edition http://www.oracle.com/us/downloads/index.html
+[R5] Servidor GlassFish http://www.oracle.com/us/downloads/index.html
+[R6] Ejemplo con websockets "WebsocketHomeGlass".
+[R7] Ejemplo con websockets "WhiteBoardApp".
+
+Enlaces
+
+[E1] http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/HomeWebsocket/WebsocketHome.html
+[E2] https://netbeans.org/kb/docs/javaee/maven-websocketapi.html
