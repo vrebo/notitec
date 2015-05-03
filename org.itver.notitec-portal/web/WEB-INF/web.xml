@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Controlador</servlet-name>
+        <servlet-class>org.itver.notitecportal.servlet.Controlador</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Controlador</servlet-name>
+        <url-pattern>/MuestraNoticias</url-pattern>
+        <url-pattern>/RegistraNoticia</url-pattern>
+        <url-pattern>/EliminarNoticia</url-pattern>
+        <url-pattern>/IniciarSesion</url-pattern>
+        <url-pattern>/AltaNoticia</url-pattern>
+        <url-pattern>/EditarNoticia</url-pattern>
+        <url-pattern>/SalvarNoticia</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

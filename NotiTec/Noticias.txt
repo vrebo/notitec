@@ -1,0 +1,20 @@
+Manuel-eclipse
+Crean nueva app en el tec
+16/12/2014
+Alumnos de la materia de taller de base de datos estan en proceso de crear una nueva aplicacion para la plataforma android que tiene como objetivo informar sobre lo que pasa en el tec.
+Jesus
+Evalucacion docente
+16/12/2014
+Ya esta habierto el sii para que realizen su evaluacion docente
+Autor
+Titulo
+25/12/2014
+Noticia extra 1, esto solo es relleno
+Autor 2
+Titulo 2
+25/12/2014
+Noticia extra 2, esto solo es relleno
+Autor 3
+Titulo 3
+25/12/2014
+Noticia extra 3, esto solo es relleno

@@ -1,0 +1,45 @@
+body{
+	padding-top: 80px;
+}
+.logotipo{
+	height: auto;
+	width: 250px;
+	margin: auto;
+	display: block;
+	padding: 25px;
+}
+.login{
+	margin: auto;
+	display: block;
+	background: #ff6600;
+	border-color: #ff6600;
+}
+.login:hover{
+	background: #ff8533;
+	border-color: #ff8533;
+}
+
+h4{
+	font-style: italic;
+	font-size: medium;
+}
+h5{
+	font-size: small;
+	font-style: italic;
+}
+
+.mensajeVentana{
+	font-style: inherit;
+}
+
+.publicar{
+	margin: auto;
+	display: block;
+	background: #ff6600;
+	border-color: #ff6600;
+}
+
+.publicar:hover{
+	background: #ff8533;
+	border-color: #ff8533;
+}

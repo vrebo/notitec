@@ -1,0 +1,8 @@
+Manuel-srr/main/java
+Crean nueva app en el tec
+16/12/2014
+Alumnos de la materia de taller de base de datos estan en proceso de crear una nueva aplicacion para la plataforma android que tiene como objetivo informar sobre lo que pasa en el tec.
+Jesus
+Evalucacion docente
+16/12/2014
+Ya esta habierto el sii para que realizen su evaluacion docente
